@@ -13,11 +13,14 @@
     
 
 } 
+
+body {
+	background:#bcaa96; 
+}
 /* end of Kayla */ 
 
 /**** Alex's section for the Interactive Map page : To be modified ***/
 
-h1 {color: green;}
 /* BEGIN java.html section, adjust as needed */
 /* customizes the before and after buttons on the java.html page */ 
 button{
