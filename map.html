@@ -24,7 +24,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/a3web/index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="/map.html">Map Project</a></li>
@@ -47,34 +47,31 @@
                             The map above was a general walking path through part of the desert from the Butnan District to the centre of Siwa Oasis. This path was around 135 km long and would take 32 hours to walk it, crossing a country border. This route is designed for experienced desert campers or
                             the accomponyment of a guide. 
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                <!-- I pulled some of the code from https://www.w3schools.com/js/default.asp and then used the idea and equation from https://www.programiz.com/javascript/examples/km-mile but the code is pulled from https://blog.bajarangisoft.com/blog/how-to-convert-from-kilometers-to-meters-using-javascript-->
-                        <h2>Convert Kilometers to Miles</h2>
-                        <p class="lead"> Being a company based on the metric system, we design our maps in Kilometer. Are you unsure of distance outputted in Kilometers? Use the tool below to convert kilometers to miles.</p>
-                        
-                        <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
-                        
-                            <script>
-                                function LengthConverter(valNum) {
-                                    document.getElementById("outputMiles").innerHTML=valNum*1.621317;
-                                }
-                            </script>
-                            <p> Miles:<span id="outputMiles"></span></p>
-
-                        <p class="lead">This is template and placeholder.</p>
-                        <p class="mb-0">This is template and placeholder.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                         </div>
+                        </div>
+                         </div>
+                            <div class="container my-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6">
+                                <!-- I pulled some of the code from https://www.w3schools.com/js/default.asp and then used the idea and equation from https://www.programiz.com/javascript/examples/km-mile but the code is pulled from https://blog.bajarangisoft.com/blog/how-to-convert-from-kilometers-to-meters-using-javascript-->
+                                        <h2>Convert Kilometers to Miles</h2>
+                                        <p class="lead"> Being a company based on the metric system, we design our maps in Kilometer. Are you unsure of distance outputted in Kilometers? Use the tool below to convert kilometers to miles.</p>
+                                        
+                                        <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+                                        
+                                            <script>
+                                                function LengthConverter(valNum) {
+                                                    document.getElementById("outputMiles").innerHTML=valNum/1.621317;
+                                                }
+                                            </script>
+                                            <p> Miles:<span id="outputMiles"></span></p>
+                
+                                        <p class="lead">This is template and placeholder.</p>
+                                        <p class="mb-0">This is template and placeholder.</p>
+                                    </div>
+                                </div>
+                            </div>
+                  </section>
 
 <!---------- Start of Grace's code modifying footer----------->
 
