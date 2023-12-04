@@ -15,11 +15,8 @@
 } 
 
 body {
-	background:#bcaa96; 
-}
-@media screen {
-	
-}
+	background:#bcaa96; }
+
 .title { overflow: auto;
 
 }
