@@ -1,7 +1,7 @@
 @charset "UTF-8";
-
- /* Header image from Kayla
- source of image: https://www.rawpixel.com/image/3297487/free-photo-image-morocco-dune-africa */
+/* Start of Kayla  */
+ /* Header image for main page
+ source of image: https://www.rawpixel.com/image/3297487/free-photo-image-morocco-dune-africa. Class itself pulled from different bootstrap classes */
 .headerimage { 
 	background-image: url("images/rollingsands.jpg");
 	background-size: cover;
@@ -12,7 +12,7 @@
 
 } 
 /*  Aboutus image from Kayla
- source of image: https://www.rawpixel.com/image/3299643/free-photo-image-cc0-creative-commons */
+ source of image: https://www.rawpixel.com/image/3299643/free-photo-image-cc0-creative-commons. About us class idea to match headerimage  */
 .aboutus { 
 	background-image: url("images/dawn.jpg");
 	background-size: cover;
@@ -22,37 +22,20 @@
     background-position: center;
 
 } 
+
 .title { overflow: auto;
 	border: hidden; 
 
 }
-/* Source: https://www.w3schools.com/css/css_background.asp. color taken from w3schools color map */ 
+/* Background color source: https://www.w3schools.com/css/css_background.asp. color taken from w3schools color map https://www.w3schools.com/colors/colors_names.asp */ 
 
 body { 
-	background-color: #FFFFF0;
+	/* background-color: #FFFAFA;*/
+	background-color: #F7F7F7;
  
 }
 
-/*source of css for next two https://www.w3schools.com/howto/howto_css_responsive_iframes.asp for the inserted Google map*/
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.mapframe {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-
- /* Source of testimonial box idea: https://www.w3schools.com/howto/howto_css_testimonials.asp */ 
+ /* Source of testimonial box and offerings box idea: https://www.w3schools.com/howto/howto_css_testimonials.asp */ 
   .testimonial {
 	border: 2px solid #000000;
 	background-color: #FAEBD7;
@@ -65,7 +48,142 @@ body {
 	margin-right: 20px;
 	border-radius: 70%;
   }
- 
-.milesconverter { border: groove;
-}
+  
+  .offering {
+	border: 1px solid #000000;
+	background-color: #FAEBD7;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 16px 0;
+  }
+
+  /*Map Project Page Specific */
+
+  /*  Map header image.
+source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world-background. About us class idea to match headerimage  */
+
+.mapheader { 
+	background-image: url("images/worldBW.jpg");
+	background-size: cover;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+
+} 
+  /*source of css for next two https://www.w3schools.com/howto/howto_css_responsive_iframes.asp for the inserted Google map. Google map itself created by Kayla*/
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
+  
+  .mapframe {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	}
+
+ /* Adding a border around the km to miles converter, to add definition to it. Border from: https://www.w3schools.com/css/css_border.asp */ 
+  .milesconverter { border: groove;
+				display: inline-block;
+				position: relative;
+				padding: 1%;
+				left: 25%;
+	}
+
 /* end of Kayla */ 
+
+/* Teams page - to be edited more by Grace https://www.w3schools.com/howto/howto_css_team.asp */
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 45px 0 45px;
+}
+
+.teamheaderimage {
+	background-image: url("images/hurricane1.jpg");
+	background-size: cover;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+}
+
+/* used this to create a shadow behind title on team page https://www.w3schools.com/css/css_text_shadow.asp */
+.teamtitle {
+	color: black;
+	text-shadow: 2px 2px 4px #000000;
+}
+.teamtext {
+	border: hidden;
+	text-align: center;
+	position: center;
+	margin: 10px 0 10px;
+	font-size: 20px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.teambox {
+	margin-right: 70px;
+	margin-left: 70px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+.footerbarrier {
+	height: 142px;
+}
