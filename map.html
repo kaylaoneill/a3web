@@ -3,7 +3,7 @@
 <head>
     <!-- Template from https://startbootstrap.com/template/full-width-pics.-->
 
-    <!--- Metadata (modified by Lucy)--->
+    <!-- Metadata (modified by Lucy)-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="A3 Web Project" />
@@ -16,24 +16,29 @@
     <!-- Our CSS (overrrides Bootstrap)-->
     <link rel="stylesheet" href="a3web.css" />
 </head>
+
 <body>
-     <!-- Responsive navbar-->
+     <!-- Responsive navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/index.html">FutureGuard GIS Solutions</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/a3web/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/map.html">Project Map</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Team</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="/a3web/index.html">FutureGuard GIS Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/a3web/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/a3web/map.html">Project Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/a3web/team.html">Team</a></li>
+                </ul>
             </div>
-        </nav>
-
-
-<!-- Content section done by Kayla-->
+        </div>
+    </nav> 
+        <!-- Header same as main page without company name-->
+        <header class= "py-5 bg-image-full mapheader">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="images/mercury1.png" alt="image of murcury, FutureGuard logo" />
+            </div>
+        </header>
+ <!-- Page 3 Content section done by Kayla-->
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
@@ -41,37 +46,48 @@
                     <!-- Source for context:https://www.globaladventurechallenges.com/journal/facts-about-sahara-desert, map made by Kayla using google maps -->
                         <h2>An Oasis Desert Map</h2>
                         <div class="mapframe"> <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=14LzNBthxTMQaWSQz6GFL6ukpSfe7juU&ehbc=2E312F" width="640" height="480"></iframe> </div>
-                        <p class="lead">The Sahara Desert has extreme heat temperatures, that can range from 30°C to -6°C. Snow falls regularly on several mountain ranges, but no where else in the Sahara. Did you know, the Sahara Desert covers an incredible 9.2 million km², which is almost the same size as China, and a total of 8% of the earth's land area. </p>
-                        <p class="mb-0">When in the desert, having a clear walking path between your locations is important. The magenta markers are to signify starting and ending points, while the blue signify nearby water.
-                            The map above was a general walking path through part of the desert from the Butnan District to the centre of Siwa Oasis. This path was around 135 km long and would take 32 hours to walk it, crossing a country border. This route is designed for experienced desert campers or
-                            the accompaniment of a guide. 
-                        </p>
-                         </div>
-                        </div>
-                         </div>
-                            <div class="container my-5">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-6">
-                                <!-- I pulled some of the code from https://www.w3schools.com/js/default.asp and then used the idea and equation from https://www.programiz.com/javascript/examples/km-mile but the code is pulled from https://blog.bajarangisoft.com/blog/how-to-convert-from-kilometers-to-meters-using-javascript-->
-                                        <h2>Convert Kilometers to Miles</h2>
-                                        <p class="lead"> Being a company based on the metric system, we design our maps in Kilometer. Are you unsure of distance outputted in Kilometers? Use the tool below to convert kilometers to miles.</p>
-                                        
-                                       <div class="milesconverter"> <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
-                                        
-                                            <script>
-                                                function LengthConverter(valNum) {
-                                                    document.getElementById("outputMiles").innerHTML=valNum/1.621317;
-                                                }
-                                            </script>
-                                            <p> Miles:<span id="outputMiles"></span></p> </div>
-            
-                                        
-                                        <p class="mb-0">If you would like us to create your map and supporting outputs using the imperial system, please let us know during your initial consultation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                  </section>
+                        <p class="lead">The Sahara Desert has extreme heat temperatures, which can range from 30°C to -6°C. Snow falls regularly on several mountain ranges, but no where else in the Sahara. Did you know, the Sahara Desert covers an incredible 9.2 million km², which is almost the same size as China, and a total of 8% of the earth's land area. </p>
+                        <p class="mb-0">When in the desert, having a clear walking path between your locations is important. The magenta markers are to signify starting and ending points, 
+                            while the blue signify nearby water. The map above was a general walking path through part of the desert from the Butnan District to the centre of Siwa Oasis. 
+                            This path was around 135 km long and would take 32 hours to walk it, crossing a country border. This route is designed for experienced desert campers or the accompaniment of a guide. 
+                            With the extreme weather shifts in the desert, being prepared for your time is the best thing you can do. With out services, we prepare a guide for you on how to survive in the desert, 
+                            and the best path to take to have the most pleasant experience. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                <!-- I pulled some of the code from https://www.w3schools.com/js/default.asp and then used the idea and equation from https://www.programiz.com/javascript/examples/km-mile but the code is pulled from https://blog.bajarangisoft.com/blog/how-to-convert-from-kilometers-to-meters-using-javascript-->
+                        <h2>Convert Kilometers to Miles</h2>
+                        <p class="lead"> Being a company based on the metric system, we design our maps in Kilometer. Are you unsure of distance outputted in Kilometers? Use the tool below to convert kilometers to miles.</p>
+                        
+                    <div class="milesconverter"> <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+                        
+                            <script>
+                                function LengthConverter(valNum) {
+                                    document.getElementById("outputMiles").innerHTML=valNum/1.621317;
+                                }
+                            </script>
+                            <p> Miles:<span id="outputMiles"></span></p> </div>
 
+                        <p class="mb-0">If you would like us to create your map and supporting outputs using the imperial system, please let us know during your initial consultation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                    <!-- Source for context:https://www.globaladventurechallenges.com/journal/facts-about-sahara-desert, map made by Kayla using google maps -->
+                        <h3>Looking to Hire Us?</h3>
+                        <p class="mb-0"> We are a professional, young company, which is looking to take on new clients. Our maps range from creating simple plans, like the one above, as well as more technical maps. 
+                            Our technical maps can be used for a range of uses, such as land use planning or conservation. We are excited about the opportunity to work with you. 
+                            Please email <a href="mailto:someone@doesnotwork.ca">inquire@futureguard.ca</a> to get a quote or set up a free consultation with us. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- End of Kayla -->
 <!-- Start of Grace's code modifying footer-->
         <!-- Footer-->
         <footer class="py-5 bg-dark">
