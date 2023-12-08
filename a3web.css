@@ -1,4 +1,20 @@
 @charset "UTF-8";
+
+h1, h2, h3, p, li {
+	font-family: "Bahnschrift", sans-serif;
+}
+#aboutcenter {
+	text-align: center;
+}
+#center {
+	text-align: center;
+}
+
+#valueborder {
+	border-style: inset;
+	border-color: red;
+}
+
 /* Start of Kayla  */
  /* Header image for main page
  source of image: https://www.rawpixel.com/image/3297487/free-photo-image-morocco-dune-africa. Class itself pulled from different bootstrap classes */
@@ -22,8 +38,10 @@
     background-position: center;
 
 } 
-
-.title { overflow: auto;
+#firstpage {
+	text-align: center;
+}
+.title {
 	border: hidden; 
 
 }
@@ -61,15 +79,25 @@ body {
 
   /*  Map header image.
 source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world-background. About us class idea to match headerimage  */
+#mapcenter {
+	text-align: center;
+}
+
+#kmtom {
+	text-align: center;
+}
+
+#hireus {
+	text-align: center;
+}
 
 .mapheader { 
-	background-image: url("images/worldBW.jpg");
+	background-image: url("images/worldBW.png");
 	background-size: cover;
 	margin: 0 auto;
 	background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
-
 } 
   /*source of css for next two https://www.w3schools.com/howto/howto_css_responsive_iframes.asp for the inserted Google map. Google map itself created by Kayla*/
 .responsive-iframe {
@@ -95,7 +123,6 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 				display: inline-block;
 				position: relative;
 				padding: 1%;
-				left: 25%;
 	}
 
 /* end of Kayla */ 
@@ -127,7 +154,7 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	border: hidden;
 	text-align: center;
 	position: center;
-	margin: 10px 0 10px;
+	margin: -50px 0 50px;
 	font-size: 20px;
 }
 
@@ -154,7 +181,7 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 
 /* Some left and right padding inside the container */
 .container {
-  padding: 0 16px;
+  padding: 20px 16px;
 }
 
 /* Clear floats */
@@ -184,6 +211,24 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	background-color: #555;
 }
 
-.footerbarrier {
-	height: 142px;
+.footerwrap {
+	margin: auto;
+	padding: 10px, 10px, 10 px, 10px;
+	width: 100%;
+	position: center;
 }
+/* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced */
+.footerlink {
+	background-color: #e4007c;
+	color: white;
+	padding: 25px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: auto;
+}
+
+#footercenter {
+	padding-inline-start: 80px;
+}
+
