@@ -153,7 +153,6 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 .teamtext {
 	border: hidden;
 	text-align: center;
-	position: center;
 	margin: -50px 0 50px;
 	font-size: 20px;
 }
@@ -213,13 +212,11 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 
 .footerwrap {
 	margin: auto;
-	padding: 10px, 10px, 10 px, 10px;
 	width: 100%;
-	position: center;
 }
-/* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced */
+/* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced, color is neon fuchsia from https://html-color.codes/pink */
 .footerlink {
-	background-color: #e4007c;
+	background-color: #b03060;
 	color: white;
 	padding: 25px 25px;
 	text-align: center;
@@ -227,6 +224,11 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	display: inline-block;
 	width: auto;
 }
+
+#footercenter {
+	padding-inline-start: 350px;
+}
+
 
 #footercenter {
 	padding-inline-start: 80px;
