@@ -1,21 +1,5 @@
 @charset "UTF-8";
 
-h1, h2, h3, p, li {
-	font-family: "Bahnschrift", sans-serif;
-}
-
-#aboutcenter {
-	text-align: center;
-}
-#center {
-	text-align: center;
-}
-
-#valueborder {
-	border-style: inset;
-	border-color: red;
-}
-
 /* Start of Kayla  */
  /* Header image for main page
  source of image: https://www.rawpixel.com/image/3297487/free-photo-image-morocco-dune-africa. Class itself pulled from different bootstrap classes */
@@ -128,7 +112,27 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 
 /* end of Kayla */ 
 
-/* Teams page - to be edited more by Grace https://www.w3schools.com/howto/howto_css_team.asp */
+/* Start of Grace */
+/* change up the default fonts */
+h1, h2, h3, p, li {
+	font-family: "Bahnschrift", sans-serif;
+}
+/* center the about us part of the index page - did multiple ids because for some reason using a class didn't center all of the text */
+#aboutcenter {
+	text-align: center;
+}
+
+/* center the values part of the index page */
+#center {
+	text-align: center;
+}
+
+/* highlight our value with a red inset border */
+#valueborder {
+	border-style: inset;
+	border-color: red;
+}
+/* Teams page - heavily inspired by https://www.w3schools.com/howto/howto_css_team.asp */
 /* Three columns side by side */
 .column {
   float: left;
@@ -136,7 +140,7 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
   margin-bottom: 16px;
   padding: 0 45px 0 45px;
 }
-
+/* source of image: https://www.rawpixel.com/image/440152/free-photo-image-hurricane-nasa-storm */
 .teamheaderimage {
 	background-image: url("images/hurricane1.jpg");
 	background-size: cover;
@@ -146,11 +150,13 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	background-position: center;
 }
 
-/* used this to create a shadow behind title on team page https://www.w3schools.com/css/css_text_shadow.asp */
+/* used this to create a black shadow behind title on team page so it was visible against the hurricane picture and later also on the index page - https://www.w3schools.com/css/css_text_shadow.asp */
 .teamtitle {
 	color: black;
 	text-shadow: 2px 2px 4px #000000;
 }
+
+/* making sure the h2 on the team page stays put and is emphasized enough */
 .teamtext {
 	border: hidden;
 	text-align: center;
@@ -158,7 +164,7 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	font-size: 40px;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
+/* Pushes columns below each other when using a smaller screen  - part of the w3schools team page cited above */
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
@@ -166,56 +172,59 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
   }
 }
 
+/* trying to make the team cards not bleed into the footer or vice versa, plus even it out now that it's two cards not 3 */
 .teambox {
 	margin-right: 70px;
 	margin-left: 70px;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
-}
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 0 auto -142px;
 }
 
-/* Some left and right padding inside the container */
+/* Add light shadows to cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* left and right padding in container */
 .container {
   padding: 20px 16px;
 }
 
-/* Clear floats */
+/* Clear floats - part of w3 schools team page cited above */
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.title {
-  color: grey;
+/* used in team subtitles and links - color is Rich Maroon from https://html-color.codes/pink */
+.subtitle {
+  color: #b03060;
 }
-
+/* pink contact us buttons on team page with links going to nothing - rich maroon from https://html-color.codes/pink */
 .button {
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #b03060;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
-
+/* interactive button color when hovering on it */
 .button:hover {
 	background-color: #555;
 }
-
+/* FOOTER css */
+/* trying to make sure the buttons in the footer stay separated from the text below it */
 .footerwrap {
 	margin: auto;
 	width: 100%;
 }
-/* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced, color is neon fuchsia from https://html-color.codes/pink */
+/* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced, color is Rich Maroon from https://html-color.codes/pink */
 .footerlink {
 	background-color: #b03060;
 	color: white;
@@ -225,8 +234,7 @@ source of image:https://www.rawpixel.com/image/440262/free-photo-image-map-world
 	display: inline-block;
 	width: auto;
 }
-
+/* trying to fix whichever setting pushed the link buttons to the left - not sure what made that happen. this made it respond poorly on a small screen, Grace's fault */
 #footercenter {
 	padding-inline-start: 350px;
-}
 }
