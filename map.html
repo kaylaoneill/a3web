@@ -18,7 +18,7 @@
 </head>
 
 <body>
-     <!-- Responsive navbar -->
+     <!-- Lucy started modifying NavBar,and Grace took over and finished it-->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="/a3web/index.html">FutureGuard GIS Solutions</a>
@@ -43,42 +43,37 @@
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                    <!-- Source for context:https://www.globaladventurechallenges.com/journal/facts-about-sahara-desert, map made by Kayla using google maps -->
-                        <h2>An Oasis Desert Map</h2>
-                        <div class="mapframe"> <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=14LzNBthxTMQaWSQz6GFL6ukpSfe7juU&ehbc=2E312F" width="640" height="480"></iframe> </div>
-                        <p class="lead">The Sahara Desert has extreme heat temperatures, which can range from 30°C to -6°C. Snow falls regularly on several mountain ranges, but no where else in the Sahara. Did you know, the Sahara Desert covers an incredible 9.2 million km², which is almost the same size as China, and a total of 8% of the earth's land area. </p>
-                        <p class="mb-0">When in the desert, having a clear walking path between your locations is important. The magenta markers are to signify starting and ending points, 
-                            while the blue signify nearby water. The map above was a general walking path through part of the desert from the Butnan District to the centre of Siwa Oasis. 
-                            This path was around 135 km long and would take 32 hours to walk it, crossing a country border. This route is designed for experienced desert campers or the accompaniment of a guide. 
-                            With the extreme weather shifts in the desert, being prepared for your time is the best thing you can do. With out services, we prepare a guide for you on how to survive in the desert, 
-                            and the best path to take to have the most pleasant experience. </p>
+                    <div id="mapcenter">
+                        <!-- Source for context:https://www.globaladventurechallenges.com/journal/facts-about-sahara-desert, map made by Kayla using google maps -->
+                            <h2>An Oasis Desert Map</h2>
+                            <div class="mapframe"> <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=14LzNBthxTMQaWSQz6GFL6ukpSfe7juU&ehbc=2E312F" width="640" height="480"></iframe> </div>
+                            <p class="lead mt-4">The Sahara Desert has extreme heat temperatures, which can range from 30°C to -6°C. Snow falls regularly on several mountain ranges, but no where else in the Sahara. Did you know, the Sahara Desert covers an incredible 9.2 million km², which is almost the same size as China, and a total of 8% of the earth's land area. </p>
+                            <p class="mb-0">When in the desert, having a clear walking path between your locations is important. The magenta markers are to signify starting and ending points, 
+                                while the blue signify nearby water. The map above was a general walking path through part of the desert from the Butnan District to the centre of Siwa Oasis. 
+                                This path was around 135 km long and would take 32 hours to walk it, crossing a country border. This route is designed for experienced desert campers or the accompaniment of a guide. 
+                                With the extreme weather shifts in the desert, being prepared for your time is the best thing you can do. With out services, we prepare a guide for you on how to survive in the desert, 
+                                and the best path to take to have the most pleasant experience. </p>
                     </div>
                 </div>
             </div>
             <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div id="kmtom">
                 <!-- I pulled some of the code from https://www.w3schools.com/js/default.asp and then used the idea and equation from https://www.programiz.com/javascript/examples/km-mile but the code is pulled from https://blog.bajarangisoft.com/blog/how-to-convert-from-kilometers-to-meters-using-javascript-->
                         <h2>Convert Kilometers to Miles</h2>
                         <p class="lead"> Being a company based on the metric system, we design our maps in Kilometer. Are you unsure of distance outputted in Kilometers? Use the tool below to convert kilometers to miles.</p>
                         
                     <div class="milesconverter"> <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
-                        
-                            <script>
-                                function LengthConverter(valNum) {
-                                    document.getElementById("outputMiles").innerHTML=valNum/1.621317;
-                                }
-                            </script>
+                        <script src="myScript.js"></script>
                             <p> Miles:<span id="outputMiles"></span></p> </div>
 
-                        <p class="mb-0">If you would like us to create your map and supporting outputs using the imperial system, please let us know during your initial consultation.</p>
+                        <p class="mb-0 mt-3">If you would like us to create your map and supporting outputs using the imperial system, please let us know during your initial consultation.</p>
                     </div>
                 </div>
             </div>
             <div class="container my-5">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div id="hireus">
                     <!-- Source for context:https://www.globaladventurechallenges.com/journal/facts-about-sahara-desert, map made by Kayla using google maps -->
                         <h3>Looking to Hire Us?</h3>
                         <p class="mb-0"> We are a professional, young company, which is looking to take on new clients. Our maps range from creating simple plans, like the one above, as well as more technical maps. 
