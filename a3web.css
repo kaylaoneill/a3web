@@ -222,7 +222,7 @@ h1, h2, h3, p, li {
 /* trying to make sure the buttons in the footer stay separated from the text below it */
 .footerwrap {
 	margin: auto;
-	width: 100%;
+	width: 50%;
 }
 /* used w3 schools for help with making buttons as footer links https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced, color is Rich Maroon from https://html-color.codes/pink */
 .footerlink {
@@ -234,7 +234,11 @@ h1, h2, h3, p, li {
 	display: inline-block;
 	width: auto;
 }
-/* trying to fix whichever setting pushed the link buttons to the left - not sure what made that happen. this made it respond poorly on a small screen, Grace's fault */
-#footercenter {
-	padding-inline-start: 350px;
+
+.footertext {
+	padding-top: 20px;
+}
+.footerbox {
+	margin: 20px 20px 20px 20px;
+	width: 100%;
 }
